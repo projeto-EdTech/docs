@@ -7,7 +7,6 @@ Registro histórico das decisões técnicas relevantes do projeto Vestibuline. C
 | ADR | Título | Status |
 | --- | --- | --- |
 | [0001](0001-bff-proxy-pattern.md) | Frontend como BFF Proxy do backend Java | Aceito |
-| [0002](0002-payment-gateway-failover.md) | Failover automático entre gateways de pagamento | Aceito |
 | [0003](0003-jwt-single-decode-point.md) | Ponto único de decodificação de JWT no frontend | Aceito |
 
 ## Como criar um novo ADR
