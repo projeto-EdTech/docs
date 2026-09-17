@@ -9,15 +9,12 @@ flowchart LR
     BE[Backend — Spring Boot\n(API principal)]
     IA[Serviço de IA\n(Gemini)]
     DB[(PostgreSQL)]
-    Discord[Bot Discord]
-    Pay[Gateways de Pagamento\nStripe / MercadoPago]
 
     User -->|HTTPS| FE
     FE -->|Route Handlers| BE
     BE --> DB
     FE --> IA
     Discord -->|sync de conta| BE
-    FE --> Pay
 ```
 
 O frontend nunca fala diretamente com o backend a partir do navegador: toda chamada passa por um Route Handler Next.js (padrão **BFF Proxy**), documentado em detalhe em [ADR-0001](../adr/0001-bff-proxy-pattern.md).
