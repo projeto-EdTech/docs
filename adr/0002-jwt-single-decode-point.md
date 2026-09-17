@@ -5,7 +5,7 @@
 
 ## Contexto
 
-O tier do usuário (`FREE`, `Simula PRO`, `TEACHER`, `ADMIN`) e outros dados de sessão vêm de um JWT emitido pelo backend Java. Decodificar o token em múltiplos lugares do frontend aumenta o risco de divergência de lógica (ex.: um componente tratando um campo ausente de forma diferente de outro) e dificulta auditar onde dados sensíveis do token são lidos.
+O tier do usuário (`FREE`, `TEACHER`, `ADMIN`) e outros dados de sessão vêm de um JWT emitido pelo backend Java. Decodificar o token em múltiplos lugares do frontend aumenta o risco de divergência de lógica (ex.: um componente tratando um campo ausente de forma diferente de outro) e dificulta auditar onde dados sensíveis do token são lidos.
 
 ## Decisão
 
